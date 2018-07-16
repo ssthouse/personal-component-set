@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import HelloWorld from './HelloWorld.vue'
+import TopBar from './TopBar.vue'
 const Components = {
-  HelloWorld
+  TopBar
 }
 
 Object.keys(Components).forEach(name => {

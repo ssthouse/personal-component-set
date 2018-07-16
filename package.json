@@ -1,7 +1,7 @@
 {
-  "name": "@ssthouse/jjjjjpersonal-component-set",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@ssthouse/personal-component-set",
+  "version": "0.1.2",
+  "private": false,
   "main": "./dist/personal-component-set.common.js",
   "files": [
     "dist/*",
@@ -17,7 +17,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "less": "^3.7.1",
+    "less-loader": "^4.1.0",
+    "vue": "^2.5.16",
+    "vuetify": "^1.1.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.4",
