@@ -11,7 +11,7 @@
                 <span style="margin-left:8px;">About me: ssthouse</span>
             </v-btn>
             <v-tooltip bottom>
-                <v-btn slot="activator" flat href="https://github.com/ssthouse/visual-explain">
+                <v-btn slot="activator" flat :href="sourceCodeLink">
                     <v-avatar size=42>
                         <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
                     </v-avatar>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  props: ['indexRoute'],
+  props: ['sourceCodeLink'],
   methods: {
     openMyGithub() {
       const a = document.createElement('a')
