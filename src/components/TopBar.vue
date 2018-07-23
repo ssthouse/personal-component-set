@@ -1,7 +1,7 @@
 <template>
     <v-toolbar>
         <v-toolbar-side-icon @click="toMainPage()"></v-toolbar-side-icon>
-        <v-toolbar-title>Visual Explain</v-toolbar-title>
+        <v-toolbar-title>{{title}}</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
             <v-btn flat @click="openMyGithub()">
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  props: ['sourceCodeLink'],
+  props: ['sourceCodeLink', 'title'],
   methods: {
     openMyGithub() {
       const a = document.createElement('a')
